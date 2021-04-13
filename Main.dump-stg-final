@@ -1,0 +1,106 @@
+
+==================== Final STG: ====================
+2021-04-13 16:25:21.239004048 UTC
+
+sat_s16R :: GHC.Types.IO ()
+[LclId] =
+    {} \u [] GHC.Base.return GHC.Base.$fMonadIO GHC.Tuple.();
+
+Main.returnFrame :: GHC.Types.Int -> GHC.Base.String
+[GblId, Arity=1, Unf=OtherCon []] =
+    {} \r [x_s16A]
+        let {
+          sat_s16I [Occ=Once1] :: GHC.Types.IO GHC.Types.Int
+          [LclId] =
+              {x_s16A} \u []
+                  let {
+                    sat_s16H [Occ=Once1]
+                      :: GHC.Stack.CloneStack.StackSnapshot -> GHC.Types.IO GHC.Types.Int
+                    [LclId] =
+                        {x_s16A} \r [stack_s16B]
+                            let {
+                              sat_s16G [Occ=Once1]
+                                :: [GHC.Ptr.Ptr GHC.Types.Word] -> GHC.Types.IO GHC.Types.Int
+                              [LclId] =
+                                  {x_s16A} \r [ds_s16D]
+                                      let {
+                                        sat_s16F [Occ=Once1] :: GHC.Types.Int
+                                        [LclId] =
+                                            {x_s16A} \u []
+                                                let {
+                                                  sat_s16E [Occ=Once1] :: GHC.Types.Int
+                                                  [LclId] =
+                                                      CCCS GHC.Types.I#! [1#];
+                                                } in  GHC.Num.+ GHC.Num.$fNumInt sat_s16E x_s16A;
+                                      } in  GHC.Base.return GHC.Base.$fMonadIO sat_s16F; } in
+                            let {
+                              sat_s16C [Occ=Once1] :: GHC.Types.IO [GHC.Ptr.Ptr GHC.Types.Word]
+                              [LclId] =
+                                  {stack_s16B} \u [] GHC.Stack.CloneStack.decode stack_s16B;
+                            } in  GHC.Base.>>= GHC.Base.$fMonadIO sat_s16C sat_s16G;
+                  } in 
+                    GHC.Base.>>=
+                        GHC.Base.$fMonadIO GHC.Stack.CloneStack.cloneMyStack sat_s16H;
+        } in 
+          case GHC.Base.$ GHC.IO.Unsafe.unsafePerformIO sat_s16I of {
+          GHC.Types.I# ds_s16K [Occ=Once1!] ->
+          case ds_s16K of {
+            __DEFAULT -> GHC.CString.unpackCString# "else"#;
+            1# -> GHC.CString.unpackCString# "1"#;
+            2# -> GHC.CString.unpackCString# "2"#;
+          };
+          };
+
+sat_s16Q :: GHC.Types.IO ()
+[LclId] =
+    {} \u []
+        let {
+          sat_s16P [Occ=Once1] :: GHC.Base.String
+          [LclId] =
+              {} \u []
+                  let {
+                    sat_s16O [Occ=Once1] :: GHC.Types.Int
+                    [LclId] =
+                        CCCS GHC.Types.I#! [0#];
+                  } in  Main.returnFrame sat_s16O; } in
+        let {
+          sat_s16N [Occ=Once1] :: GHC.Base.String -> GHC.Types.IO ()
+          [LclId] =
+              {} \u []
+                  case
+                      GHC.Show.$fShow[] GHC.Show.$fShowChar
+                  of
+                  sat_s16M [Occ=Once1]
+                  {
+                  __DEFAULT -> System.IO.print sat_s16M;
+                  };
+        } in  GHC.Base.$ sat_s16N sat_s16P;
+
+Main.main :: GHC.Types.IO ()
+[GblId] =
+    {} \u [] GHC.Base.>> GHC.Base.$fMonadIO sat_s16Q sat_s16R;
+
+:Main.main :: GHC.Types.IO ()
+[GblId] =
+    {} \u [] GHC.TopHandler.runMainIO Main.main;
+
+$trModule3_r14a :: GHC.Prim.Addr#
+[GblId, Unf=OtherCon []] =
+    "Main"#;
+
+$trModule4_r14b :: GHC.Types.TrName
+[GblId, Unf=OtherCon []] =
+    CCS_DONT_CARE GHC.Types.TrNameS! [$trModule3_r14a];
+
+$trModule1_r148 :: GHC.Prim.Addr#
+[GblId, Unf=OtherCon []] =
+    "main"#;
+
+$trModule2_r149 :: GHC.Types.TrName
+[GblId, Unf=OtherCon []] =
+    CCS_DONT_CARE GHC.Types.TrNameS! [$trModule1_r148];
+
+Main.$trModule :: GHC.Types.Module
+[GblId, Unf=OtherCon []] =
+    CCS_DONT_CARE GHC.Types.Module! [$trModule2_r149 $trModule4_r14b];
+

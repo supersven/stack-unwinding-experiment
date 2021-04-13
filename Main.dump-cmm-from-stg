@@ -1,0 +1,519 @@
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.252645619 UTC
+
+[sat_s16R_entry() { //  [R1]
+         { info_tbls: [(c16Y,
+                        label: sat_s16R_info
+                        rep: HeapRep static { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c16Y: // global
+           _s16R::P64 = R1;
+           goto c16T;
+       c16T: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c16Z; else goto c170;
+       c16Z: // global
+           R1 = _s16R::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c170: // global
+           (_c16V::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _s16R::P64);
+           if (_c16V::I64 == 0) goto c16X; else goto c16W;
+       c16X: // global
+           call (I64[_s16R::P64])() args: 8, res: 0, upd: 8;
+       c16W: // global
+           I64[(old + 24)] = stg_bh_upd_frame_info;
+           I64[(old + 16)] = _c16V::I64;
+           //tick src<Main.hs:(18,1)-(20,17)>
+           R2 = GHC.Base.$fMonadIO_closure;
+           I64[(old + 40)] = stg_ap_p_info;
+           P64[(old + 32)] = GHC.Tuple.()_closure+1;
+           call GHC.Base.return_info(R2) args: 40, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.25426281 UTC
+
+[sat_s16F_entry() { //  [R1]
+         { info_tbls: [(c17s,
+                        label: sat_s16F_info
+                        rep: HeapRep 1 ptrs { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c17s: // global
+           _s16F::P64 = R1;
+           goto c17q;
+       c17q: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c17t; else goto c17u;
+       c17t: // global
+           R1 = _s16F::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c17u: // global
+           I64[(old + 24)] = stg_upd_frame_info;
+           P64[(old + 16)] = _s16F::P64;
+           _s16A::P64 = P64[_s16F::P64 + 16];
+           //tick src<Main.hs:11:40-46>
+           //tick src<Main.hs:11:45>
+           R2 = GHC.Num.$fNumInt_closure;
+           I64[(old + 48)] = stg_ap_pp_info;
+           P64[(old + 40)] = stg_INTLIKE_closure+273;
+           P64[(old + 32)] = _s16A::P64;
+           call GHC.Num.+_info(R2) args: 48, res: 0, upd: 24;
+     }
+ },
+ sat_s16G_entry() { //  [R2, R1]
+         { info_tbls: [(c17v,
+                        label: sat_s16G_info
+                        rep: HeapRep 1 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c17v: // global
+           _s16D::P64 = R2;
+           _s16G::P64 = R1;
+           goto c17m;
+       c17m: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c17w; else goto c17x;
+       c17x: // global
+           goto c17l;
+       c17l: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c17z; else goto c17y;
+       c17z: // global
+           HpAlloc = 24;
+           goto c17w;
+       c17w: // global
+           R2 = _s16D::P64;
+           R1 = _s16G::P64;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c17y: // global
+           _s16A::P64 = P64[_s16G::P64 + 7];
+           //tick src<Main.hs:11:33-46>
+           I64[Hp - 16] = sat_s16F_info;
+           P64[Hp] = _s16A::P64;
+           _c17o::P64 = Hp - 16;
+           R2 = GHC.Base.$fMonadIO_closure;
+           I64[(old + 24)] = stg_ap_p_info;
+           P64[(old + 16)] = _c17o::P64;
+           call GHC.Base.return_info(R2) args: 24, res: 0, upd: 8;
+     }
+ },
+ sat_s16C_entry() { //  [R1]
+         { info_tbls: [(c17E,
+                        label: sat_s16C_info
+                        rep: HeapRep 1 ptrs { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c17E: // global
+           _s16C::P64 = R1;
+           goto c17C;
+       c17C: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c17F; else goto c17G;
+       c17F: // global
+           R1 = _s16C::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c17G: // global
+           I64[(old + 24)] = stg_upd_frame_info;
+           P64[(old + 16)] = _s16C::P64;
+           _s16B::P64 = P64[_s16C::P64 + 16];
+           //tick src<Main.hs:10:38-49>
+           //tick src<Main.hs:10:45-49>
+           R2 = _s16B::P64;
+           R1 = GHC.Stack.CloneStack.decode_closure;
+           call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s16H_entry() { //  [R2, R1]
+         { info_tbls: [(c17H,
+                        label: sat_s16H_info
+                        rep: HeapRep 1 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c17H: // global
+           _s16B::P64 = R2;
+           _s16H::P64 = R1;
+           goto c17h;
+       c17h: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c17I; else goto c17J;
+       c17J: // global
+           goto c17g;
+       c17g: // global
+           Hp = Hp + 40;
+           if (Hp > HpLim) (likely: False) goto c17L; else goto c17K;
+       c17L: // global
+           HpAlloc = 40;
+           goto c17I;
+       c17I: // global
+           R2 = _s16B::P64;
+           R1 = _s16H::P64;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c17K: // global
+           _s16A::P64 = P64[_s16H::P64 + 7];
+           I64[Hp - 32] = sat_s16G_info;
+           P64[Hp - 24] = _s16A::P64;
+           _c17j::P64 = Hp - 31;
+           I64[Hp - 16] = sat_s16C_info;
+           P64[Hp] = _s16B::P64;
+           _c17A::P64 = Hp - 16;
+           R2 = GHC.Base.$fMonadIO_closure;
+           I64[(old + 32)] = stg_ap_pp_info;
+           P64[(old + 24)] = _c17A::P64;
+           P64[(old + 16)] = _c17j::P64;
+           call GHC.Base.>>=_info(R2) args: 32, res: 0, upd: 8;
+     }
+ },
+ sat_s16I_entry() { //  [R1]
+         { info_tbls: [(c17M,
+                        label: sat_s16I_info
+                        rep: HeapRep 1 ptrs { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c17M: // global
+           _s16I::P64 = R1;
+           goto c17c;
+       c17c: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c17N; else goto c17O;
+       c17O: // global
+           Hp = Hp + 16;
+           if (Hp > HpLim) (likely: False) goto c17Q; else goto c17P;
+       c17Q: // global
+           HpAlloc = 16;
+           goto c17N;
+       c17N: // global
+           R1 = _s16I::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c17P: // global
+           I64[(old + 24)] = stg_upd_frame_info;
+           P64[(old + 16)] = _s16I::P64;
+           _s16A::P64 = P64[_s16I::P64 + 16];
+           //tick src<Main.hs:(8,43)-(11,46)>
+           I64[Hp - 8] = sat_s16H_info;
+           P64[Hp] = _s16A::P64;
+           _c17e::P64 = Hp - 7;
+           //tick src<Main.hs:9:42-53>
+           R2 = GHC.Base.$fMonadIO_closure;
+           I64[(old + 48)] = stg_ap_pp_info;
+           P64[(old + 40)] = GHC.Stack.CloneStack.cloneMyStack_closure;
+           P64[(old + 32)] = _c17e::P64;
+           call GHC.Base.>>=_info(R2) args: 48, res: 0, upd: 24;
+     }
+ },
+ section ""cstring" . c17X_str" {
+     c17X_str:
+         I8[] "else"
+ },
+ section ""cstring" . c17Z_str" {
+     c17Z_str:
+         I8[] "1"
+ },
+ section ""cstring" . c181_str" {
+     c181_str:
+         I8[] "2"
+ },
+ Main.returnFrame_entry() { //  [R2]
+         { info_tbls: [(c182,
+                        label: Main.returnFrame_info
+                        rep: HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c182: // global
+           _s16A::P64 = R2;
+           goto c178;
+       c178: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c183; else goto c184;
+       c184: // global
+           goto c177;
+       c177: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c186; else goto c185;
+       c186: // global
+           HpAlloc = 24;
+           goto c183;
+       c183: // global
+           R2 = _s16A::P64;
+           R1 = Main.returnFrame_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c185: // global
+           //tick src<Main.hs:(7,1)-(15,15)>
+           I64[Hp - 16] = sat_s16I_info;
+           P64[Hp] = _s16A::P64;
+           _c17a::P64 = Hp - 16;
+           //tick src<Main.hs:8:25-39>
+           I64[(young<c17R> + 8)] = c17R;
+           R3 = _c17a::P64;
+           R2 = GHC.IO.Unsafe.unsafePerformIO_closure;
+           R1 = GHC.Base.$_closure;
+           call stg_ap_pp_fast(R3,
+                               R2,
+                               R1) returns to c17R, args: 8, res: 8, upd: 8;
+       c17R: // global
+           _s16J::P64 = R1;
+           _s16K::I64 = I64[_s16J::P64 + 7];
+           _s16L::I64 = _s16K::I64;
+           switch [-9223372036854775808 .. 9223372036854775807] _s16L::I64 {
+               case 1 : goto c18a;
+               case 2 : goto c18b;
+               default: {goto c189;}
+           }
+       c18b: // global
+           //tick src<Main.hs:14:10-12>
+           R2 = c181_str;
+           R1 = GHC.CString.unpackCString#_closure;
+           call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+       c18a: // global
+           //tick src<Main.hs:13:10-12>
+           R2 = c17Z_str;
+           R1 = GHC.CString.unpackCString#_closure;
+           call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+       c189: // global
+           //tick src<Main.hs:15:10-15>
+           R2 = c17X_str;
+           R1 = GHC.CString.unpackCString#_closure;
+           call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.260154053 UTC
+
+[sat_s16P_entry() { //  [R1]
+         { info_tbls: [(c18P,
+                        label: sat_s16P_info
+                        rep: HeapRep { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c18P: // global
+           _s16P::P64 = R1;
+           goto c18N;
+       c18N: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c18Q; else goto c18R;
+       c18Q: // global
+           R1 = _s16P::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c18R: // global
+           I64[(old + 24)] = stg_upd_frame_info;
+           P64[(old + 16)] = _s16P::P64;
+           //tick src<Main.hs:19:17-29>
+           R2 = stg_INTLIKE_closure+257;
+           call Main.returnFrame_info(R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s16N_entry() { //  [R1]
+         { info_tbls: [(c18Y,
+                        label: sat_s16N_info
+                        rep: HeapRep { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c18Y: // global
+           _s16N::P64 = R1;
+           goto c18U;
+       c18U: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c18Z; else goto c190;
+       c18Z: // global
+           R1 = _s16N::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c190: // global
+           I64[(old + 24)] = stg_upd_frame_info;
+           P64[(old + 16)] = _s16N::P64;
+           //tick src<Main.hs:19:9-13>
+           I64[(young<c18W> + 8)] = c18W;
+           R2 = GHC.Show.$fShowChar_closure;
+           R1 = GHC.Show.$fShow[]_closure;
+           call stg_ap_p_fast(R2,
+                              R1) returns to c18W, args: 8, res: 8, upd: 24;
+       c18W: // global
+           _s16M::P64 = R1;
+           R2 = _s16M::P64;
+           R1 = System.IO.print_closure;
+           call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s16Q_entry() { //  [R1]
+         { info_tbls: [(c194,
+                        label: sat_s16Q_info
+                        rep: HeapRep static { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c194: // global
+           _s16Q::P64 = R1;
+           goto c18G;
+       c18G: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c195; else goto c196;
+       c196: // global
+           Hp = Hp + 32;
+           if (Hp > HpLim) (likely: False) goto c198; else goto c197;
+       c198: // global
+           HpAlloc = 32;
+           goto c195;
+       c195: // global
+           R1 = _s16Q::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c197: // global
+           (_c18I::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _s16Q::P64);
+           if (_c18I::I64 == 0) goto c18K; else goto c18J;
+       c18K: // global
+           call (I64[_s16Q::P64])() args: 8, res: 0, upd: 8;
+       c18J: // global
+           I64[(old + 24)] = stg_bh_upd_frame_info;
+           I64[(old + 16)] = _c18I::I64;
+           //tick src<Main.hs:(18,1)-(20,17)>
+           I64[Hp - 24] = sat_s16P_info;
+           _c18L::P64 = Hp - 24;
+           I64[Hp - 8] = sat_s16N_info;
+           _c18S::P64 = Hp - 8;
+           R3 = _c18L::P64;
+           R2 = _c18S::P64;
+           R1 = GHC.Base.$_closure;
+           call stg_ap_pp_fast(R3, R2, R1) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.262673121 UTC
+
+[Main.main_entry() { //  [R1]
+         { info_tbls: [(c19u,
+                        label: Main.main_info
+                        rep: HeapRep static { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c19u: // global
+           _rh1::P64 = R1;
+           goto c19p;
+       c19p: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c19v; else goto c19w;
+       c19v: // global
+           R1 = _rh1::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c19w: // global
+           (_c19r::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _rh1::P64);
+           if (_c19r::I64 == 0) goto c19t; else goto c19s;
+       c19t: // global
+           call (I64[_rh1::P64])() args: 8, res: 0, upd: 8;
+       c19s: // global
+           I64[(old + 24)] = stg_bh_upd_frame_info;
+           I64[(old + 16)] = _c19r::I64;
+           //tick src<Main.hs:(18,1)-(20,17)>
+           R2 = GHC.Base.$fMonadIO_closure;
+           I64[(old + 48)] = stg_ap_pp_info;
+           P64[(old + 40)] = sat_s16Q_closure;
+           P64[(old + 32)] = sat_s16R_closure;
+           call GHC.Base.>>_info(R2) args: 48, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.263730842 UTC
+
+[:Main.main_entry() { //  [R1]
+         { info_tbls: [(c19K,
+                        label: :Main.main_info
+                        rep: HeapRep static { Thunk }
+                        srt: Nothing)]
+           stack_info: arg_space: 8
+         }
+     {offset
+       c19K: // global
+           _01D::P64 = R1;
+           goto c19F;
+       c19F: // global
+           if ((old + 0) - <highSp> < SpLim) (likely: False) goto c19L; else goto c19M;
+       c19L: // global
+           R1 = _01D::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c19M: // global
+           (_c19H::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _01D::P64);
+           if (_c19H::I64 == 0) goto c19J; else goto c19I;
+       c19J: // global
+           call (I64[_01D::P64])() args: 8, res: 0, upd: 8;
+       c19I: // global
+           I64[(old + 24)] = stg_bh_upd_frame_info;
+           I64[(old + 16)] = _c19H::I64;
+           R2 = Main.main_closure;
+           R1 = GHC.TopHandler.runMainIO_closure;
+           call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.264588158 UTC
+
+[section ""cstring" . $trModule3_r14a_bytes" {
+     $trModule3_r14a_bytes:
+         I8[] "Main"
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.26470168 UTC
+
+[section ""data" . $trModule4_r14b_closure" {
+     $trModule4_r14b_closure: label: GHC.Types.TrNameS_con_info
+                              rep: HeapRep static {
+                                     Con {tag: 0 descr:"ghc-prim:GHC.Types.TrNameS"} }
+                              srt: Nothing CCS_DONT_CARE [$trModule3_r14a_bytes]
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.264827263 UTC
+
+[section ""cstring" . $trModule1_r148_bytes" {
+     $trModule1_r148_bytes:
+         I8[] "main"
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.264925125 UTC
+
+[section ""data" . $trModule2_r149_closure" {
+     $trModule2_r149_closure: label: GHC.Types.TrNameS_con_info
+                              rep: HeapRep static {
+                                     Con {tag: 0 descr:"ghc-prim:GHC.Types.TrNameS"} }
+                              srt: Nothing CCS_DONT_CARE [$trModule1_r148_bytes]
+ }]
+
+
+==================== Cmm produced by codegen ====================
+2021-04-13 16:25:21.265044227 UTC
+
+[section ""data" . Main.$trModule_closure" {
+     Main.$trModule_closure: label: GHC.Types.Module_con_info
+                             rep: HeapRep static {
+                                    Con {tag: 0 descr:"ghc-prim:GHC.Types.Module"} }
+                             srt: Nothing CCS_DONT_CARE [$trModule2_r149_closure+1,
+                                                         $trModule4_r14b_closure+1]
+ }]
+

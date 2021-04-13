@@ -1,0 +1,137 @@
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.253114808 UTC
+
+[(c16W, {GHC.Base.$fMonadIO_closure}), (c16X, {}),
+ (c16Y, {GHC.Base.$fMonadIO_closure}), (c16Z, {}),
+ (c170, {GHC.Base.$fMonadIO_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.255907122 UTC
+
+[(c17s, {GHC.Num.$fNumInt_closure}), (c17t, {}),
+ (c17u, {GHC.Num.$fNumInt_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.256243478 UTC
+
+[(c17v, {GHC.Base.$fMonadIO_closure, sat_s16F_closure}),
+ (c17w, {}), (c17x, {GHC.Base.$fMonadIO_closure, sat_s16F_closure}),
+ (c17y, {GHC.Base.$fMonadIO_closure, sat_s16F_closure}), (c17z, {})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.256580315 UTC
+
+[(c17E, {GHC.Stack.CloneStack.decode_closure}), (c17F, {}),
+ (c17G, {GHC.Stack.CloneStack.decode_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.256922991 UTC
+
+[(c17H,
+  {GHC.Base.$fMonadIO_closure, sat_s16C_closure, sat_s16G_closure}),
+ (c17I, {}),
+ (c17J,
+  {GHC.Base.$fMonadIO_closure, sat_s16C_closure, sat_s16G_closure}),
+ (c17K,
+  {GHC.Base.$fMonadIO_closure, sat_s16C_closure, sat_s16G_closure}),
+ (c17L, {})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.257314189 UTC
+
+[(c17M,
+  {GHC.Stack.CloneStack.cloneMyStack_closure,
+   GHC.Base.$fMonadIO_closure, sat_s16H_closure}),
+ (c17N, {}),
+ (c17O,
+  {GHC.Stack.CloneStack.cloneMyStack_closure,
+   GHC.Base.$fMonadIO_closure, sat_s16H_closure}),
+ (c17P,
+  {GHC.Stack.CloneStack.cloneMyStack_closure,
+   GHC.Base.$fMonadIO_closure, sat_s16H_closure}),
+ (c17Q, {})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.257818098 UTC
+
+[(c17R, {GHC.CString.unpackCString#_closure}),
+ (c182,
+  {GHC.Base.$_closure, block_c17R_closure,
+   GHC.IO.Unsafe.unsafePerformIO_closure, Main.returnFrame_closure,
+   sat_s16I_closure}),
+ (c183, {Main.returnFrame_closure}),
+ (c184,
+  {GHC.Base.$_closure, block_c17R_closure,
+   GHC.IO.Unsafe.unsafePerformIO_closure, Main.returnFrame_closure,
+   sat_s16I_closure}),
+ (c185,
+  {GHC.Base.$_closure, block_c17R_closure,
+   GHC.IO.Unsafe.unsafePerformIO_closure, sat_s16I_closure}),
+ (c186, {Main.returnFrame_closure}),
+ (c189, {GHC.CString.unpackCString#_closure}),
+ (c18a, {GHC.CString.unpackCString#_closure}),
+ (c18b, {GHC.CString.unpackCString#_closure}),
+ (u18c, {GHC.CString.unpackCString#_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.260824466 UTC
+
+[(c18P, {Main.returnFrame_closure}), (c18Q, {}),
+ (c18R, {Main.returnFrame_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.261126442 UTC
+
+[(c18W, {System.IO.print_closure}),
+ (c18Y,
+  {block_c18W_closure, GHC.Show.$fShowChar_closure,
+   GHC.Show.$fShow[]_closure}),
+ (c18Z, {}),
+ (c190,
+  {block_c18W_closure, GHC.Show.$fShowChar_closure,
+   GHC.Show.$fShow[]_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.261524089 UTC
+
+[(c18J, {GHC.Base.$_closure, sat_s16N_closure, sat_s16P_closure}),
+ (c18K, {}),
+ (c194, {GHC.Base.$_closure, sat_s16N_closure, sat_s16P_closure}),
+ (c195, {}),
+ (c196, {GHC.Base.$_closure, sat_s16N_closure, sat_s16P_closure}),
+ (c197, {GHC.Base.$_closure, sat_s16N_closure, sat_s16P_closure}),
+ (c198, {})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.263021888 UTC
+
+[(c19s,
+  {GHC.Base.$fMonadIO_closure, sat_s16Q_closure, sat_s16R_closure}),
+ (c19t, {}),
+ (c19u,
+  {GHC.Base.$fMonadIO_closure, sat_s16Q_closure, sat_s16R_closure}),
+ (c19v, {}),
+ (c19w,
+  {GHC.Base.$fMonadIO_closure, sat_s16Q_closure, sat_s16R_closure})]
+
+
+==================== CAFEnv ====================
+2021-04-13 16:25:21.264044648 UTC
+
+[(c19I, {GHC.TopHandler.runMainIO_closure, Main.main_closure}),
+ (c19J, {}),
+ (c19K, {GHC.TopHandler.runMainIO_closure, Main.main_closure}),
+ (c19L, {}),
+ (c19M, {GHC.TopHandler.runMainIO_closure, Main.main_closure})]
+

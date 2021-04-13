@@ -1,0 +1,378 @@
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.252960095 UTC
+
+{offset
+  c16Y: // global
+      _s16R::P64 = R1;
+      if ((Sp + 8) - 40 < SpLim) (likely: False) goto c16Z; else goto c170;
+  c16Z: // global
+      R1 = _s16R::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c170: // global
+      (_c16V::I64) = call "ccall" arg hints:  [PtrHint,
+                                               PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _s16R::P64);
+      if (_c16V::I64 == 0) goto c16X; else goto c16W;
+  c16X: // global
+      call (I64[_s16R::P64])() args: 8, res: 0, upd: 8;
+  c16W: // global
+      I64[Sp - 16] = stg_bh_upd_frame_info;
+      I64[Sp - 8] = _c16V::I64;
+      //tick src<Main.hs:(18,1)-(20,17)>
+      R2 = GHC.Base.$fMonadIO_closure;
+      I64[Sp - 32] = stg_ap_p_info;
+      P64[Sp - 24] = GHC.Tuple.()_closure+1;
+      Sp = Sp - 32;
+      call GHC.Base.return_info(R2) args: 40, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.255769139 UTC
+
+{offset
+  c17s: // global
+      _s16F::P64 = R1;
+      if ((Sp + 8) - 48 < SpLim) (likely: False) goto c17t; else goto c17u;
+  c17t: // global
+      R1 = _s16F::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c17u: // global
+      I64[Sp - 16] = stg_upd_frame_info;
+      P64[Sp - 8] = _s16F::P64;
+      _s16A::P64 = P64[_s16F::P64 + 16];
+      //tick src<Main.hs:11:40-46>
+      //tick src<Main.hs:11:45>
+      R2 = GHC.Num.$fNumInt_closure;
+      I64[Sp - 40] = stg_ap_pp_info;
+      P64[Sp - 32] = stg_INTLIKE_closure+273;
+      P64[Sp - 24] = _s16A::P64;
+      Sp = Sp - 40;
+      call GHC.Num.+_info(R2) args: 48, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.256109266 UTC
+
+{offset
+  c17v: // global
+      _s16D::P64 = R2;
+      _s16G::P64 = R1;
+      if ((Sp + 8) - 24 < SpLim) (likely: False) goto c17w; else goto c17x;
+  c17x: // global
+      Hp = Hp + 24;
+      if (Hp > HpLim) (likely: False) goto c17z; else goto c17y;
+  c17z: // global
+      HpAlloc = 24;
+      goto c17w;
+  c17w: // global
+      R2 = _s16D::P64;
+      R1 = _s16G::P64;
+      call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+  c17y: // global
+      _s16A::P64 = P64[_s16G::P64 + 7];
+      //tick src<Main.hs:11:33-46>
+      I64[Hp - 16] = sat_s16F_info;
+      P64[Hp] = _s16A::P64;
+      _c17o::P64 = Hp - 16;
+      R2 = GHC.Base.$fMonadIO_closure;
+      I64[Sp - 16] = stg_ap_p_info;
+      P64[Sp - 8] = _c17o::P64;
+      Sp = Sp - 16;
+      call GHC.Base.return_info(R2) args: 24, res: 0, upd: 8;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.256481003 UTC
+
+{offset
+  c17E: // global
+      _s16C::P64 = R1;
+      if ((Sp + 8) - 24 < SpLim) (likely: False) goto c17F; else goto c17G;
+  c17F: // global
+      R1 = _s16C::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c17G: // global
+      I64[Sp - 16] = stg_upd_frame_info;
+      P64[Sp - 8] = _s16C::P64;
+      _s16B::P64 = P64[_s16C::P64 + 16];
+      //tick src<Main.hs:10:38-49>
+      //tick src<Main.hs:10:45-49>
+      R2 = _s16B::P64;
+      R1 = GHC.Stack.CloneStack.decode_closure;
+      Sp = Sp - 16;
+      call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.256783299 UTC
+
+{offset
+  c17H: // global
+      _s16B::P64 = R2;
+      _s16H::P64 = R1;
+      if ((Sp + 8) - 32 < SpLim) (likely: False) goto c17I; else goto c17J;
+  c17J: // global
+      Hp = Hp + 40;
+      if (Hp > HpLim) (likely: False) goto c17L; else goto c17K;
+  c17L: // global
+      HpAlloc = 40;
+      goto c17I;
+  c17I: // global
+      R2 = _s16B::P64;
+      R1 = _s16H::P64;
+      call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+  c17K: // global
+      _s16A::P64 = P64[_s16H::P64 + 7];
+      I64[Hp - 32] = sat_s16G_info;
+      P64[Hp - 24] = _s16A::P64;
+      _c17j::P64 = Hp - 31;
+      I64[Hp - 16] = sat_s16C_info;
+      P64[Hp] = _s16B::P64;
+      _c17A::P64 = Hp - 16;
+      R2 = GHC.Base.$fMonadIO_closure;
+      I64[Sp - 24] = stg_ap_pp_info;
+      P64[Sp - 16] = _c17A::P64;
+      P64[Sp - 8] = _c17j::P64;
+      Sp = Sp - 24;
+      call GHC.Base.>>=_info(R2) args: 32, res: 0, upd: 8;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.257181476 UTC
+
+{offset
+  c17M: // global
+      _s16I::P64 = R1;
+      if ((Sp + 8) - 48 < SpLim) (likely: False) goto c17N; else goto c17O;
+  c17O: // global
+      Hp = Hp + 16;
+      if (Hp > HpLim) (likely: False) goto c17Q; else goto c17P;
+  c17Q: // global
+      HpAlloc = 16;
+      goto c17N;
+  c17N: // global
+      R1 = _s16I::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c17P: // global
+      I64[Sp - 16] = stg_upd_frame_info;
+      P64[Sp - 8] = _s16I::P64;
+      _s16A::P64 = P64[_s16I::P64 + 16];
+      //tick src<Main.hs:(8,43)-(11,46)>
+      I64[Hp - 8] = sat_s16H_info;
+      P64[Hp] = _s16A::P64;
+      _c17e::P64 = Hp - 7;
+      //tick src<Main.hs:9:42-53>
+      R2 = GHC.Base.$fMonadIO_closure;
+      I64[Sp - 40] = stg_ap_pp_info;
+      P64[Sp - 32] = GHC.Stack.CloneStack.cloneMyStack_closure;
+      P64[Sp - 24] = _c17e::P64;
+      Sp = Sp - 40;
+      call GHC.Base.>>=_info(R2) args: 48, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.257596784 UTC
+
+{offset
+  c182: // global
+      _s16A::P64 = R2;
+      if ((Sp + 8) - 16 < SpLim) (likely: False) goto c183; else goto c184;
+  c184: // global
+      Hp = Hp + 24;
+      if (Hp > HpLim) (likely: False) goto c186; else goto c185;
+  c186: // global
+      HpAlloc = 24;
+      goto c183;
+  c183: // global
+      R2 = _s16A::P64;
+      R1 = Main.returnFrame_closure;
+      call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+  c185: // global
+      //tick src<Main.hs:(7,1)-(15,15)>
+      I64[Hp - 16] = sat_s16I_info;
+      P64[Hp] = _s16A::P64;
+      _c17a::P64 = Hp - 16;
+      //tick src<Main.hs:8:25-39>
+      I64[Sp - 8] = c17R;
+      R3 = _c17a::P64;
+      R2 = GHC.IO.Unsafe.unsafePerformIO_closure;
+      R1 = GHC.Base.$_closure;
+      Sp = Sp - 8;
+      call stg_ap_pp_fast(R3,
+                          R2,
+                          R1) returns to c17R, args: 8, res: 8, upd: 8;
+  c17R: // global
+      _s16J::P64 = R1;
+      _s16K::I64 = I64[_s16J::P64 + 7];
+      _s16L::I64 = _s16K::I64;
+      if (_s16L::I64 != 1) goto u18c; else goto c18a;
+  u18c: // global
+      if (_s16L::I64 != 2) goto c189; else goto c18b;
+  c189: // global
+      //tick src<Main.hs:15:10-15>
+      R2 = c17X_str;
+      R1 = GHC.CString.unpackCString#_closure;
+      Sp = Sp + 8;
+      call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+  c18b: // global
+      //tick src<Main.hs:14:10-12>
+      R2 = c181_str;
+      R1 = GHC.CString.unpackCString#_closure;
+      Sp = Sp + 8;
+      call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+  c18a: // global
+      //tick src<Main.hs:13:10-12>
+      R2 = c17Z_str;
+      R1 = GHC.CString.unpackCString#_closure;
+      Sp = Sp + 8;
+      call stg_ap_n_fast(R2, R1) args: 8, res: 0, upd: 8;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.260724684 UTC
+
+{offset
+  c18P: // global
+      _s16P::P64 = R1;
+      if ((Sp + 8) - 24 < SpLim) (likely: False) goto c18Q; else goto c18R;
+  c18Q: // global
+      R1 = _s16P::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c18R: // global
+      I64[Sp - 16] = stg_upd_frame_info;
+      P64[Sp - 8] = _s16P::P64;
+      //tick src<Main.hs:19:17-29>
+      R2 = stg_INTLIKE_closure+257;
+      Sp = Sp - 16;
+      call Main.returnFrame_info(R2) args: 24, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.261007969 UTC
+
+{offset
+  c18Y: // global
+      _s16N::P64 = R1;
+      if ((Sp + 8) - 32 < SpLim) (likely: False) goto c18Z; else goto c190;
+  c18Z: // global
+      R1 = _s16N::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c190: // global
+      I64[Sp - 16] = stg_upd_frame_info;
+      P64[Sp - 8] = _s16N::P64;
+      //tick src<Main.hs:19:9-13>
+      I64[Sp - 24] = c18W;
+      R2 = GHC.Show.$fShowChar_closure;
+      R1 = GHC.Show.$fShow[]_closure;
+      Sp = Sp - 24;
+      call stg_ap_p_fast(R2,
+                         R1) returns to c18W, args: 8, res: 8, upd: 24;
+  c18W: // global
+      _s16M::P64 = R1;
+      R2 = _s16M::P64;
+      R1 = System.IO.print_closure;
+      Sp = Sp + 8;
+      call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.261366896 UTC
+
+{offset
+  c194: // global
+      _s16Q::P64 = R1;
+      if ((Sp + 8) - 24 < SpLim) (likely: False) goto c195; else goto c196;
+  c196: // global
+      Hp = Hp + 32;
+      if (Hp > HpLim) (likely: False) goto c198; else goto c197;
+  c198: // global
+      HpAlloc = 32;
+      goto c195;
+  c195: // global
+      R1 = _s16Q::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c197: // global
+      (_c18I::I64) = call "ccall" arg hints:  [PtrHint,
+                                               PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _s16Q::P64);
+      if (_c18I::I64 == 0) goto c18K; else goto c18J;
+  c18K: // global
+      call (I64[_s16Q::P64])() args: 8, res: 0, upd: 8;
+  c18J: // global
+      I64[Sp - 16] = stg_bh_upd_frame_info;
+      I64[Sp - 8] = _c18I::I64;
+      //tick src<Main.hs:(18,1)-(20,17)>
+      I64[Hp - 24] = sat_s16P_info;
+      _c18L::P64 = Hp - 24;
+      I64[Hp - 8] = sat_s16N_info;
+      _c18S::P64 = Hp - 8;
+      R3 = _c18L::P64;
+      R2 = _c18S::P64;
+      R1 = GHC.Base.$_closure;
+      Sp = Sp - 16;
+      call stg_ap_pp_fast(R3, R2, R1) args: 24, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.262889186 UTC
+
+{offset
+  c19u: // global
+      _rh1::P64 = R1;
+      if ((Sp + 8) - 48 < SpLim) (likely: False) goto c19v; else goto c19w;
+  c19v: // global
+      R1 = _rh1::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c19w: // global
+      (_c19r::I64) = call "ccall" arg hints:  [PtrHint,
+                                               PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _rh1::P64);
+      if (_c19r::I64 == 0) goto c19t; else goto c19s;
+  c19t: // global
+      call (I64[_rh1::P64])() args: 8, res: 0, upd: 8;
+  c19s: // global
+      I64[Sp - 16] = stg_bh_upd_frame_info;
+      I64[Sp - 8] = _c19r::I64;
+      //tick src<Main.hs:(18,1)-(20,17)>
+      R2 = GHC.Base.$fMonadIO_closure;
+      I64[Sp - 40] = stg_ap_pp_info;
+      P64[Sp - 32] = sat_s16Q_closure;
+      P64[Sp - 24] = sat_s16R_closure;
+      Sp = Sp - 40;
+      call GHC.Base.>>_info(R2) args: 48, res: 0, upd: 24;
+}
+
+
+==================== Layout Stack ====================
+2021-04-13 16:25:21.263930325 UTC
+
+{offset
+  c19K: // global
+      _01D::P64 = R1;
+      if ((Sp + 8) - 24 < SpLim) (likely: False) goto c19L; else goto c19M;
+  c19L: // global
+      R1 = _01D::P64;
+      call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+  c19M: // global
+      (_c19H::I64) = call "ccall" arg hints:  [PtrHint,
+                                               PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, _01D::P64);
+      if (_c19H::I64 == 0) goto c19J; else goto c19I;
+  c19J: // global
+      call (I64[_01D::P64])() args: 8, res: 0, upd: 8;
+  c19I: // global
+      I64[Sp - 16] = stg_bh_upd_frame_info;
+      I64[Sp - 8] = _c19H::I64;
+      R2 = Main.main_closure;
+      R1 = GHC.TopHandler.runMainIO_closure;
+      Sp = Sp - 16;
+      call stg_ap_p_fast(R2, R1) args: 24, res: 0, upd: 24;
+}
+
